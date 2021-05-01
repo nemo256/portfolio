@@ -1,8 +1,7 @@
 import { ChakraProvider, ColorModeProvider } from '@chakra-ui/react'
 import { extendTheme as theme } from '../theme'
-// import '@fontsource/fresca/400.css'
-// import '@fontsource/girassol'
-import '@fontsource/open-sans/700.css'
+import '@fontsource/fresca/400.css'
+import Layout from '../components/Layout'
 
 
 export default function MyApp({ Component, pageProps }) {
@@ -13,7 +12,9 @@ export default function MyApp({ Component, pageProps }) {
           useSystemColorMode: true,
         }}
       >
-        <Component {...pageProps} />
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
       </ColorModeProvider>
     </ChakraProvider>
   )

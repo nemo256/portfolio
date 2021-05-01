@@ -7,6 +7,7 @@ import {
 
 export default function Hero() {
   return (
+    <>
     <Container
       bgColor='black'
       maxW='100%'
@@ -29,6 +30,7 @@ export default function Hero() {
           fontSize='3xl'
           fontWeight='extrabold'
           color='gray.200'
+          align='center'
         >
           Hi, I'm Amine Neggazi
         </Text>
@@ -38,9 +40,19 @@ export default function Hero() {
           color='gray.500'
           align='center'
         >
-          Full-Stack Web Developer & Open Sourcerer Occasionally
+          Full-Stack Web Developer & Open Sourcerer
+        </Text>
+        <Text
+          py='2'
+          fontSize='l'
+          fontWeight='medium'
+          color='gray.400'
+          align='center'
+        >
+          I design and code Web, Mobile & CLI apps.
         </Text>
       </Stack>
     </Container>
+    </>
   )
 }

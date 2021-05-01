@@ -9,7 +9,7 @@ export default extendTheme({
   },
   fonts: {
     heading: 'Open Sans',
-    body: 'Open Sans'
+    body: `Fresca`
   },
   breakpoints: {
     sm: '40em',

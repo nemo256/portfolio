@@ -1,11 +1,23 @@
+import Head from 'next/head'
 import Navbar from './Navbar'
+import Footer from './Footer'
+import { Box } from '@chakra-ui/react'
 
-
-export default function Layout({ props }) {
+export default function Layout({ children }) {
   return (
     <>
-      <Navbar />
-      { props }
+      <Head>
+        <link rel="icon" href="wave-emoji.ico" />
+        <title>Amine Neggazi</title>
+      </Head>
+      <Box
+        bgColor='black'
+        h='100vh'
+      >
+        <Navbar />
+        { children }
+        <Footer />
+      </Box>
     </>
   )
 }
