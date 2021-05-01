@@ -16,9 +16,9 @@ export default function Hero() {
   return (
     <>
     <Container
-      bgColor='black'
+      bgColor='red'
       maxW='100%'
-      h={ ['600px', '520px', '520px', '520px'] }
+      h={ ['700px', '520px', '520px', '520px'] }
     >
       <Stack
         pt='8'
