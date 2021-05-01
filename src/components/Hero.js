@@ -3,7 +3,6 @@ import {
   Text,
   Image,
   Stack,
-  Button,
   Link,
   Flex,
   IconButton,
@@ -62,28 +61,31 @@ export default function Hero() {
         >
           I design and code Web, Mobile & CLI apps.
         </Text>
-        <Flex pt='8' h='100px'>
-          <Link href='https://twitter.com/amine_neggazi'>
+        <Flex pt='8'>
+          <Link href='https://twitter.com/amine_neggazi' passHref>
             <IconButton
               aria-label='Twitter Icon'
               variant='icon'
               color='#1DA1F2'
+              isRound
               p='4'
               icon={ <FaTwitter size='50'/> } />
           </Link>
-          <Link href='https://www.github.com/nemo256'>
+          <Link href='https://www.github.com/nemo256' passHref>
             <IconButton
               aria-label='Github Icon'
               variant='icon'
               color='#E0E0E0'
+              isRound
               p='4'
               icon={ <FaGithub size='50'/> } />
           </Link>
-          <Link href='https://www.reddit.com/user/nemo256'>
+          <Link href='https://www.reddit.com/user/nemo256' passHref>
             <IconButton
               aria-label='Reddit Icon'
               variant='icon'
               color='#FF5700'
+              isRound
               p='4'
               icon={ <FaReddit size='50'/> } />
           </Link>

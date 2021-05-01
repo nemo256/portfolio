@@ -70,19 +70,75 @@ export default function Navbar() {
             </Button>
           </Link>
         </Box>
+        <Flex
+          w='100vw'
+          h='100vh'
+          bgColor='black'
+          zIndex={ 20 }
+          top='0'
+          left='0'
+          pos='fixed'
+          overflowY='auto'
+          flexDir='column'
+          display={ display }
+        >
+          <Flex 
+            justify='flex-end'
+            p='3'
+            align='center'
+          >
+            <IconButton
+              display={ ['flex', 'flex', 'none', 'none'] }
+              bg='black'
+              color='gray.100'
+              aria-label='Close Menu'
+              icon={ <CgClose size='30'/> }
+              onClick={ () => changeDisplay('none') }
+            />
+          </Flex>
+          <Flex
+            flexDir='column'
+            color='gray.300'
+            align='center'
+            pt='8'
+            content='center'
+            justify='center'
+            px='2'
+            display={ ['flex', 'flex', 'none', 'none'] }
+          >
+            <Link href='/' passHref>
+              <Button my='1' as='a' w='75%' bg='black'>
+                Home
+              </Button>
+            </Link>
+            <Spacer />
+            <Link href='/projects' passHref>
+              <Button my='1' as='a' w='75%' bg='black'>
+                Projects
+              </Button>
+            </Link>
+            <Spacer />
+            <Link href='/about' passHref>
+              <Button my='1' as='a' w='75%' bg='black'>
+                About
+              </Button>
+            </Link>
+            <Spacer />
+            <Link href='/contact' passHref>
+              <Button my='1' as='a' w='75%' bg='black'>
+                Contact
+              </Button>
+            </Link>
+            <Spacer />
+          </Flex>
+        </Flex>
         <IconButton
           display={ ['flex', 'flex', 'none', 'none'] }
           bg='black'
           color='gray.100'
+          aria-label='Open Menu'
           icon={ <GiHamburgerMenu size='30'/> }
-          onClick={ () => changeDisplay('none') }
-        />
-        <IconButton
-          display={ ['flex', 'flex', 'none', 'none'] }
-          bg='black'
-          color='gray.100'
-          icon={ <CgClose size='30'/> }
-          onClick={ () => changeDisplay('none') }
+          onClick={ () => changeDisplay('flex') }
         />
       </Flex>
     </>
