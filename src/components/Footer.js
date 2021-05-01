@@ -1,19 +1,19 @@
 import {
-  Center,
   Text,
   Link,
+  Center,
 } from '@chakra-ui/react'
 
 export default function Footer() {
   return (
     <Center
       bg='black'
-      h='100px'
       align='center'
+      justify='center'
       maxW='100%'
-      py='2'
-      mt={ ['12', '4', '1', '1' ] }
-      px='2'
+      py='1rem'
+      minH='15vh'
+      flexWrap='wrap'
     >
       <Text
         color='gray.300'

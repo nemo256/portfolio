@@ -1,8 +1,10 @@
 import { ChakraProvider, ColorModeProvider } from '@chakra-ui/react'
 import { extendTheme as theme } from '../theme'
-import '@fontsource/fresca/400.css'
 import Layout from '../components/Layout'
 
+// Fonts
+import '@fontsource/open-sans/700.css'
+import '@fontsource/fresca/400.css'
 
 export default function MyApp({ Component, pageProps }) {
   return (

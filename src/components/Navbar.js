@@ -2,7 +2,6 @@ import {
   Box,
   Spacer,
   Flex,
-  Text,
   Button,
   Tooltip,
   Image,

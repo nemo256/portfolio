@@ -3,7 +3,15 @@ import {
   Text,
   Image,
   Stack,
+  Button,
+  Link,
+  Flex,
+  Spacer,
 } from '@chakra-ui/react'
+
+// Icons
+import { FaTwitter, FaReddit, FaGithub } from 'react-icons/fa'
+
 
 export default function Hero() {
   return (
@@ -11,7 +19,7 @@ export default function Hero() {
     <Container
       bgColor='black'
       maxW='100%'
-      h='400px'
+      h={ ['600px', '520px', '520px', '520px'] }
     >
       <Stack
         pt='8'
@@ -19,8 +27,11 @@ export default function Hero() {
         align='center'
       >
         <Image
-          boxSize='200px'
+          boxSize='220px'
           rounded='full'
+          border='solid'
+          border='8px'
+          borderColor='purple'
           src="me.png"
           fallbackSrc='wave-emoji.png'
           alt='My profile picture'
@@ -37,7 +48,7 @@ export default function Hero() {
         <Text
           fontSize='xl'
           fontWeight='semibold'
-          color='gray.500'
+          color='gray.400'
           align='center'
         >
           Full-Stack Web Developer & Open Sourcerer
@@ -46,11 +57,34 @@ export default function Hero() {
           py='2'
           fontSize='l'
           fontWeight='medium'
-          color='gray.400'
+          color='gray.500'
           align='center'
         >
           I design and code Web, Mobile & CLI apps.
         </Text>
+        <Flex pt='8' h='100px'>
+          <Link href='https://twitter.com/amine_neggazi'>
+            <Button
+              variant='icon'
+            >
+              <FaTwitter size='50'/>
+            </Button>
+          </Link>
+          <Link href='https://www.github.com/nemo256'>
+            <Button
+              variant='icon'
+            >
+              <FaGithub size='50'/>
+            </Button>
+          </Link>
+          <Link href='https://www.reddit.com/user/nemo256'>
+            <Button
+              variant='icon'
+            >
+              <FaReddit size='50'/>
+            </Button>
+          </Link>
+        </Flex>
       </Stack>
     </Container>
     </>

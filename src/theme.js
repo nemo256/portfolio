@@ -17,4 +17,19 @@ export default extendTheme({
     lg: '64em',
     xl: '80em',
   },
+  variants: {
+    icon: {
+      p: '2',
+      m: '4',
+      bg: 'black',
+      border: 'none',
+      color: 'gray.500',
+      textDecoration: 'none',
+      _hover: {
+        bg: 'black',
+        color: 'gray.500',
+        border: 'none'
+      }
+    }
+  }
 })
