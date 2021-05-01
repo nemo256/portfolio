@@ -1,5 +1,5 @@
 {
-  "name": "with-chakra-ui",
+  "name": "portfolio",
   "version": "0.1.0",
   "scripts": {
     "dev": "next dev",
@@ -11,6 +11,9 @@
     "@chakra-ui/react": "^1.4.2",
     "@emotion/react": "^11.0.0",
     "@emotion/styled": "^11.0.0",
+    "@fontsource/fresca": "^4.2.3",
+    "@fontsource/girassol": "^4.2.3",
+    "@fontsource/open-sans": "^4.2.2",
     "framer-motion": "^4.0.3",
     "next": "latest",
     "react": "^17.0.2",
