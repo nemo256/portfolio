@@ -6,7 +6,7 @@ import {
   Button,
   Link,
   Flex,
-  Spacer,
+  IconButton,
 } from '@chakra-ui/react'
 
 // Icons
@@ -64,25 +64,28 @@ export default function Hero() {
         </Text>
         <Flex pt='8' h='100px'>
           <Link href='https://twitter.com/amine_neggazi'>
-            <Button
+            <IconButton
+              aria-label='Twitter Icon'
               variant='icon'
-            >
-              <FaTwitter size='50'/>
-            </Button>
+              color='#1DA1F2'
+              p='4'
+              icon={ <FaTwitter size='50'/> } />
           </Link>
           <Link href='https://www.github.com/nemo256'>
-            <Button
+            <IconButton
+              aria-label='Github Icon'
               variant='icon'
-            >
-              <FaGithub size='50'/>
-            </Button>
+              color='#E0E0E0'
+              p='4'
+              icon={ <FaGithub size='50'/> } />
           </Link>
           <Link href='https://www.reddit.com/user/nemo256'>
-            <Button
+            <IconButton
+              aria-label='Reddit Icon'
               variant='icon'
-            >
-              <FaReddit size='50'/>
-            </Button>
+              color='#FF5700'
+              p='4'
+              icon={ <FaReddit size='50'/> } />
           </Link>
         </Flex>
       </Stack>

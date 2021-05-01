@@ -12,6 +12,7 @@ export default function Footer() {
       justify='center'
       maxW='100%'
       py='1rem'
+      px='2'
       minH='15vh'
       flexWrap='wrap'
     >
