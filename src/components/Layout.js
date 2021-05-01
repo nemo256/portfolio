@@ -7,7 +7,7 @@ export default function Layout({ children }) {
   return (
     <>
       <Head>
-        <link rel="icon" href="wave-emoji.ico" />
+        <link rel="icon" href="wave-emoji.svg" />
         <title>Amine Neggazi</title>
       </Head>
       <Box

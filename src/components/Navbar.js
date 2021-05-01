@@ -9,6 +9,7 @@ import {
 } from '@chakra-ui/react'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { CgClose } from 'react-icons/cg'
+import { FaHandPeace } from 'react-icons/fa'
 import Link from 'next/link'
 import { useState } from 'react'
 
@@ -33,14 +34,12 @@ export default function Navbar() {
         >
           <IconButton
             bgColor='black'
+            color='yellow'
             outline='none'
             variant='unstyled'
             mx='2'
+            icon={ <FaHandPeace size='40' opacity='0.9'/> }
           >
-            <Image 
-              boxSize='35'
-              src='wave-emoji.png'
-            />
           </IconButton>
         </Tooltip>
         <Spacer />
