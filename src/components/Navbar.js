@@ -4,7 +4,6 @@ import {
   Flex,
   Button,
   Tooltip,
-  Image,
   IconButton,
 } from '@chakra-ui/react'
 import { GiHamburgerMenu } from 'react-icons/gi'
@@ -48,7 +47,7 @@ export default function Navbar() {
           px='2'
           display={ ['none', 'none', 'flex', 'flex'] }
         >
-          <Link href='/' passHref>
+          <Link href='http://amineneggazi.herokuapp.com' passHref>
             <Button mx='1' as='a' bg='black'>
               Home
             </Button>
