@@ -14,7 +14,6 @@ import { FaTwitter, FaReddit, FaGithub } from 'react-icons/fa'
 
 export default function Hero() {
   return (
-    <>
     <Container
       bgColor='black'
       maxW='100%'
@@ -92,6 +91,5 @@ export default function Hero() {
         </Flex>
       </Stack>
     </Container>
-    </>
   )
 }

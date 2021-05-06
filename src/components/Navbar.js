@@ -47,7 +47,7 @@ export default function Navbar() {
           px='2'
           display={ ['none', 'none', 'flex', 'flex'] }
         >
-          <Link href='http://amineneggazi.herokuapp.com' passHref>
+          <Link href='/' passHref>
             <Button mx='1' as='a' bg='black'>
               Home
             </Button>
