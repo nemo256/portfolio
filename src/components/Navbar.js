@@ -105,7 +105,7 @@ export default function Navbar() {
             display={ ['flex', 'flex', 'none', 'none'] }
           >
             <Link href='/' passHref>
-              <Button my='1' as='a' w='75%' bg='black'>
+              <Button onClick={ () => changeDisplay('none') } my='1' as='a' w='75%' bg='black'>
                 Home
               </Button>
             </Link>
