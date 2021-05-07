@@ -17,7 +17,7 @@ export default function Hero() {
     <Container
       bgColor='black'
       maxW='100%'
-      h={ ['775px', '600px', '520px', '520px'] }
+      h={ ['775px', '600px', '520px', '520px', '520px'] }
     >
       <Stack
         pt='8'
@@ -33,7 +33,7 @@ export default function Hero() {
           src="memoji.png"
           fallbackSrc='wave-emoji.png'
           alt='My profile picture'
-          _hover={{ bgColor: "whiteAlpha.50" }}
+          _hover={{ bgColor: "whiteAlpha.200" }}
         />
         <Text
           pt='4'

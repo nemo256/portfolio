@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import Navbar from './Navbar'
+import Navbar2 from './Navbar2'
 import Footer from './Footer'
 import { Box } from '@chakra-ui/react'
-import { FaHandPeace } from 'react-icons/fa'
 
 export default function Layout({ children }) {
   return (
@@ -10,10 +10,11 @@ export default function Layout({ children }) {
       <Head>
         <link rel='icon' href='favicon.svg'/>
         <title>Amine Neggazi</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <Box
         bgColor='black'
-        h='100vh'
+        h='100%'
       >
         <Navbar />
         { children }
