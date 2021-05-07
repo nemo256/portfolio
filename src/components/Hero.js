@@ -25,14 +25,15 @@ export default function Hero() {
         align='center'
       >
         <Image
-          boxSize='220px'
+          boxSize='250px'
           rounded='full'
           border='solid'
           border='8px'
           borderColor='purple'
-          src="me.png"
+          src="memoji.png"
           fallbackSrc='wave-emoji.png'
           alt='My profile picture'
+          _hover={{ bgColor: "whiteAlpha.50" }}
         />
         <Text
           pt='4'
