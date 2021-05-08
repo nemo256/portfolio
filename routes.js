@@ -1,8 +1,8 @@
 const routes = {
   "/": "Home",
   "/projects": "Projects",
+  "/skills": "Skills",
   "/about": "About",
-  "/contact": "Contact",
 }
 
 export default routes

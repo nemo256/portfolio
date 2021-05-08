@@ -1,19 +1,21 @@
 import {
   Text,
   Link,
-  Center,
+  Container,
 } from '@chakra-ui/react'
 
 export default function Footer() {
   return (
-    <Center
+    <Container
+      as='footer'
       bg='black'
       align='center'
+      textAlign='center'
       justify='center'
       maxW='100%'
-      py='1rem'
-      px='2'
-      minH='15vh'
+      p={ ['2', '4'] }
+      h='full'
+      // minH={ ['15vh', '0'] }
       flexWrap='wrap'
     >
       <Text
@@ -32,6 +34,6 @@ export default function Footer() {
         </Link>
         . Version 1.1
       </Text>
-    </Center>
+    </Container>
   )
 }

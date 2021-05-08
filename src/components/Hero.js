@@ -3,10 +3,10 @@ import {
   Text,
   Image,
   Stack,
-  Link,
   Flex,
   IconButton,
 } from '@chakra-ui/react'
+import Link from 'next/link'
 
 // Icons
 import { FaTwitter, FaReddit, FaGithub } from 'react-icons/fa'
@@ -17,7 +17,10 @@ export default function Hero() {
     <Container
       bgColor='black'
       maxW='100%'
-      h={ ['775px', '600px', '520px', '520px', '520px'] }
+      // pt={ ['0', '25%', '0', '0', '0'] }
+      // pb={ ['10', '26%', '10', '10', '10'] }
+      pb='10'
+      // pt='auto'
     >
       <Stack
         pt='8'
@@ -30,10 +33,14 @@ export default function Hero() {
           border='solid'
           border='8px'
           borderColor='purple'
-          src="memoji.png"
+          src='memoji.png'
           fallbackSrc='wave-emoji.png'
           alt='My profile picture'
-          _hover={{ bgColor: "whiteAlpha.200" }}
+          _hover={{
+            boxSize: '270px',
+            transition: 'all .3s ease',
+            bgColor: 'whiteAlpha.200'
+          }}
         />
         <Text
           pt='4'
@@ -61,15 +68,21 @@ export default function Hero() {
         >
           I design and code Web, Mobile & CLI apps.
         </Text>
-        <Flex pt='8'>
+        <Flex pt={ ['8', '4'] }>
           <Link href='https://twitter.com/amine_neggazi' passHref>
             <IconButton
               aria-label='Twitter Icon'
               variant='icon'
               color='#1DA1F2'
               isRound
-              p='4'
-              icon={ <FaTwitter size='50'/> } />
+              p='8'
+              icon={ <FaTwitter size='50'/> }
+              _hover={{
+                transform: 'translate(-3px, -3px)',
+                bg: 'whiteAlpha.200',
+              }}
+              _focus={{  }}
+            />
           </Link>
           <Link href='https://www.github.com/nemo256' passHref>
             <IconButton
@@ -77,8 +90,14 @@ export default function Hero() {
               variant='icon'
               color='#E0E0E0'
               isRound
-              p='4'
-              icon={ <FaGithub size='50'/> } />
+              p='8'
+              icon={ <FaGithub size='50'/> }
+              _hover={{
+                transform: 'translateY(-3px)',
+                bg: 'whiteAlpha.200'
+              }}
+              _focus={{  }}
+            />
           </Link>
           <Link href='https://www.reddit.com/user/nemo256' passHref>
             <IconButton
@@ -86,8 +105,14 @@ export default function Hero() {
               variant='icon'
               color='#FF5700'
               isRound
-              p='4'
-              icon={ <FaReddit size='50'/> } />
+              p='8'
+              icon={ <FaReddit size='50'/> }
+              _hover={{
+                transform: 'translate(3px, -3px)',
+                bg: 'whiteAlpha.200'
+              }}
+              _focus={{  }}
+            />
           </Link>
         </Flex>
       </Stack>
