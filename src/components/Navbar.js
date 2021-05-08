@@ -81,7 +81,7 @@ export default function Navbar() {
             key={name} 
             href={route}
             passHref
-            display={{ base: 'none', sm: 'flex' }}
+            display={{ sm: 'flex', md: 'flex' }}
           >
             <Button
               as="a"

@@ -75,11 +75,11 @@ export default function Hero() {
               variant='icon'
               color='#1DA1F2'
               isRound
-              p='8'
-              icon={ <FaTwitter size='50'/> }
+              mx='3'
+              icon={ <FaTwitter size='50' p='8'/> }
               _hover={{
                 transform: 'translate(-3px, -3px)',
-                bg: 'whiteAlpha.200',
+                transition: 'all .3s ease'
               }}
               _focus={{  }}
             />
@@ -90,11 +90,10 @@ export default function Hero() {
               variant='icon'
               color='#E0E0E0'
               isRound
-              p='8'
-              icon={ <FaGithub size='50'/> }
+              mx='3'
+              icon={ <FaGithub size='50' p='8'/> }
               _hover={{
                 transform: 'translateY(-3px)',
-                bg: 'whiteAlpha.200'
               }}
               _focus={{  }}
             />
@@ -105,11 +104,10 @@ export default function Hero() {
               variant='icon'
               color='#FF5700'
               isRound
-              p='8'
-              icon={ <FaReddit size='50'/> }
+              mx='3'
+              icon={ <FaReddit size='50' p='8'/> }
               _hover={{
                 transform: 'translate(3px, -3px)',
-                bg: 'whiteAlpha.200'
               }}
               _focus={{  }}
             />
