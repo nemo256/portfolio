@@ -60,6 +60,7 @@ export default function Navbar() {
             variant='unstyled'
             mx='2'
             icon={ <FaHandPeace size='40' opacity='0.9'/> }
+            _focus={{  }}
           >
           </IconButton>
         </Tooltip>
@@ -141,6 +142,7 @@ export default function Navbar() {
                   borderBottom={isRoute(route) ? '2px' : '0px'}
                   borderColor={isRoute(route) ? 'purple' : 'black'}
                   fontWeight={isRoute(route) ? 'bold' : 'semibold'}
+                  onClick={onClose}
                   _hover={{
                     bgColor: 'purple',
                     textColor: 'black',
