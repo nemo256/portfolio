@@ -36,9 +36,8 @@ export default function Navbar() {
       insetX='0'
       justify='center'
       p='3'
-      pos='sticky'
       top='0'
-      zIndex='modal'
+      zIndex='10'
       opacity='0.9'
     >
       <Flex
@@ -123,7 +122,10 @@ export default function Navbar() {
     </HStack>
     {isOpen ? (
           <Box pb='4'>
-            <Stack as={'nav'} spacing={4}>
+            <Stack 
+              as={'nav'} 
+              spacing={4} 
+            >
             {routeArray.map(([route, name]) => (
               <Link 
                 key={name} 
