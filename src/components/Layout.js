@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import Navbar from './Navbar'
-import Navbar2 from './Navbar2'
 import Footer from './Footer'
 import { Box } from '@chakra-ui/react'
 
@@ -13,7 +12,7 @@ export default function Layout({ children }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <Box
-        bgColor='black'
+        bg='black'
         h='100%'
       >
         <Navbar />

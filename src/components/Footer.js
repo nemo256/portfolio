@@ -1,7 +1,7 @@
 import {
+  Container,
   Text,
   Link,
-  Container,
 } from '@chakra-ui/react'
 
 export default function Footer() {
@@ -9,16 +9,14 @@ export default function Footer() {
     <Container
       as='footer'
       bg='black'
+      h='100px'
       align='center'
-      textAlign='center'
-      justify='center'
-      maxW='100%'
-      p={ ['2', '4'] }
-      h='full'
-      // minH={ ['15vh', '0'] }
-      flexWrap='wrap'
+      maxW='4xl'
+      py='2'
+      px='2'
     >
       <Text
+        textAlign='center'
         color='gray.300'
       >
         MIT License © 2021-Present
@@ -32,7 +30,7 @@ export default function Footer() {
         >
           Amine Neggazi
         </Link>
-        . Version 1.1
+        Version 1.1
       </Text>
     </Container>
   )

@@ -1,12 +1,13 @@
 import { useState, useCallback } from 'react'
 import { 
   Button,
+  Box,
   HStack,
+  Stack,
   Flex,
   Tooltip, 
   IconButton,
   Spacer,
-  Slide,
   useDisclosure
 } from "@chakra-ui/react";
 import { GiHamburgerMenu } from 'react-icons/gi'
@@ -20,7 +21,6 @@ const routeArray = Object.entries(routes)
 
 export default function Navbar() {
   const router = useRouter();
-  const [ display, changeDisplay ] = useState('none')
   const { isOpen, onOpen, onClose } = useDisclosure()
 
   const isRoute = useCallback((route) => {
@@ -30,6 +30,7 @@ export default function Navbar() {
   );
 
   return (
+    <>
     <HStack
       bgColor='black'
       insetX='0'
@@ -70,18 +71,30 @@ export default function Navbar() {
           color='gray.100'
           outline='none'
           variant='unstyled'
-          icon={ isOpen ? <GiHamburgerMenu size='30' /> : <CgClose size='30' />}
+          icon={ 
+            isOpen ?
+              <CgClose size='30' />
+              : <GiHamburgerMenu size='30' /> 
+          }
           onClick={isOpen ? onClose : onOpen}
-          display={{ sm: !isOpen ? 'none' : 'inherit' }}
+          display={{ 
+            sm: !isOpen ? 'inherit' : 'none',
+            md: !isOpen ? 'none' : 'inherit',
+            lg: !isOpen ? 'none' : 'inherit',
+            xl: !isOpen ? 'none' : 'inherit',
+            '2xl': !isOpen ? 'none' : 'inherit',
+          }}
           _focus={{  }}
         >
         </IconButton>
+        <HStack
+          display={['none', 'none', 'flex', 'flex', 'flex']}
+        >
         {routeArray.map(([route, name]) => (
           <Link 
             key={name} 
             href={route}
             passHref
-            display={{ sm: 'flex', md: 'flex' }}
           >
             <Button
               as="a"
@@ -92,11 +105,10 @@ export default function Navbar() {
               borderBottom={isRoute(route) ? '2px' : '0px'}
               borderColor={isRoute(route) ? 'purple' : 'black'}
               fontWeight={isRoute(route) ? 'bold' : 'semibold'}
-              d={['none', 'none', 'flex', 'flex', 'flex']}
               _hover={{
                 bgColor: 'purple',
                 textColor: 'black',
-                fontWeight: 'extraBold',
+                fontWeight: isRoute(route) ? 'extrabold' : 'bold',
                 fontSize: 'xl',
                 transition: 'all 0.1 ease'
               }}
@@ -106,7 +118,43 @@ export default function Navbar() {
             </Button>
           </Link>
         ))}
+        </HStack>
       </Flex>
     </HStack>
+    {isOpen ? (
+          <Box pb='4'>
+            <Stack as={'nav'} spacing={8}>
+            {routeArray.map(([route, name]) => (
+              <Link 
+                key={name} 
+                href={route}
+                passHref
+              >
+                <Button
+                  as="a"
+                  mx='1'
+                  fontSize='l'
+                  textColor='gray.300'
+                  bgColor='black'
+                  borderBottom={isRoute(route) ? '2px' : '0px'}
+                  borderColor={isRoute(route) ? 'purple' : 'black'}
+                  fontWeight={isRoute(route) ? 'bold' : 'semibold'}
+                  _hover={{
+                    bgColor: 'purple',
+                    textColor: 'black',
+                    fontWeight: isRoute(route) ? 'extrabold' : 'bold',
+                    fontSize: 'xl',
+                    transition: 'all 0.1 ease'
+                  }}
+                  _focus={{  }}
+                >
+                  {name}
+                </Button>
+              </Link>
+            ))}
+            </Stack>
+          </Box>
+        ) : null}
+    </>
   );
 };

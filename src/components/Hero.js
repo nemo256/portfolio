@@ -16,10 +16,10 @@ export default function Hero() {
   return (
     <Container
       bgColor='black'
-      maxW='100%'
-      // pt={ ['0', '25%', '0', '0', '0'] }
-      // pb={ ['10', '26%', '10', '10', '10'] }
-      pb='10'
+      maxW='4xl'
+      pt={ ['0', '25%', '0', '0', '0'] }
+      pb={ ['10', '26%', '10', '10', '10'] }
+      // pb='10'
       // pt='auto'
     >
       <Stack
@@ -39,7 +39,7 @@ export default function Hero() {
           _hover={{
             boxSize: '270px',
             transition: 'all .3s ease',
-            bgColor: 'whiteAlpha.200'
+            bgColor: 'whiteAlpha.200',
           }}
         />
         <Text
