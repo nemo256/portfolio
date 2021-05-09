@@ -3,6 +3,18 @@ import { createBreakpoints } from '@chakra-ui/theme-tools'
 
 
 export default extendTheme({
+  styles: {
+    global: {
+    // styles for the `body`
+      body: {
+        bg: "black",
+        color: "black",
+      },
+    },
+  },
+  config: {
+    bgColor: 'black'
+  },
   colors: {
     brand: {
       black: '#000000',

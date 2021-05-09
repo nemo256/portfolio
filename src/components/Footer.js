@@ -9,13 +9,13 @@ export default function Footer() {
     <Container
       as='footer'
       bg='black'
-      h='100px'
       align='center'
       maxW='4xl'
       py='2'
       px='2'
     >
       <Text
+        py='4'
         textAlign='center'
         color='gray.300'
       >

@@ -123,7 +123,7 @@ export default function Navbar() {
     </HStack>
     {isOpen ? (
           <Box pb='4'>
-            <Stack as={'nav'} spacing={8}>
+            <Stack as={'nav'} spacing={4}>
             {routeArray.map(([route, name]) => (
               <Link 
                 key={name} 
@@ -132,7 +132,7 @@ export default function Navbar() {
               >
                 <Button
                   as="a"
-                  mx='1'
+                  py='8'
                   fontSize='l'
                   textColor='gray.300'
                   bgColor='black'

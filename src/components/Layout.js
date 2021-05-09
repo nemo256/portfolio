@@ -1,7 +1,7 @@
+import { Box } from '@chakra-ui/react'
 import Head from 'next/head'
 import Navbar from './Navbar'
 import Footer from './Footer'
-import { Box } from '@chakra-ui/react'
 
 export default function Layout({ children }) {
   return (
@@ -14,6 +14,7 @@ export default function Layout({ children }) {
       <Box
         bg='black'
         h='100%'
+        w='100%'
       >
         <Navbar />
         { children }

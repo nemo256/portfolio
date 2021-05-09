@@ -17,8 +17,8 @@ export default function Hero() {
     <Container
       bgColor='black'
       maxW='4xl'
-      pt={ ['0', '25%', '0', '0', '0'] }
-      pb={ ['10', '26%', '10', '10', '10'] }
+      pt={ ['0', '26%', '0', '0', '0'] }
+      pb={ ['5', '26%', '5', '10', '25'] }
       // pb='10'
       // pt='auto'
     >
@@ -27,21 +27,23 @@ export default function Hero() {
         spacing='0'
         align='center'
       >
-        <Image
-          boxSize='250px'
-          rounded='full'
-          border='solid'
-          border='8px'
-          borderColor='purple'
-          src='memoji.png'
-          fallbackSrc='wave-emoji.png'
-          alt='My profile picture'
-          _hover={{
-            boxSize: '270px',
-            transition: 'all .3s ease',
-            bgColor: 'whiteAlpha.200',
-          }}
-        />
+        <Link href='/about'>
+          <Image
+            boxSize='250px'
+            rounded='full'
+            border='solid'
+            border='8px'
+            borderColor='purple'
+            src='memoji.png'
+            fallbackSrc='wave-emoji.png'
+            alt='My profile picture'
+            _hover={{
+              boxSize: '270px',
+              transition: 'all .3s ease',
+              bgColor: 'whiteAlpha.200',
+            }}
+          />
+        </Link>
         <Text
           pt='4'
           fontSize='3xl'
