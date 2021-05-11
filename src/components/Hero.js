@@ -38,9 +38,9 @@ export default function Hero() {
             fallbackSrc='wave-emoji.png'
             alt='My profile picture'
             _hover={{
-              boxSize: '270px',
+              transform: 'scale(1.07)',
               transition: 'all .3s ease',
-              bgColor: 'whiteAlpha.200',
+              bgColor: 'whiteAlpha.200'
             }}
           />
         </Link>
@@ -80,7 +80,7 @@ export default function Hero() {
               mx='3'
               icon={ <FaTwitter size='50' p='8'/> }
               _hover={{
-                transform: 'translate(-3px, -3px)',
+                transform: 'scale(1.27)',
                 transition: 'all .3s ease'
               }}
               _focus={{  }}
@@ -95,7 +95,8 @@ export default function Hero() {
               mx='3'
               icon={ <FaGithub size='50' p='8'/> }
               _hover={{
-                transform: 'translateY(-3px)',
+                transform: 'scale(1.27)',
+                transition: 'all .3s ease'
               }}
               _focus={{  }}
             />
@@ -109,7 +110,8 @@ export default function Hero() {
               mx='3'
               icon={ <FaReddit size='50' p='8'/> }
               _hover={{
-                transform: 'translate(3px, -3px)',
+                transform: 'scale(1.27)',
+                transition: 'all .3s ease'
               }}
               _focus={{  }}
             />
