@@ -1,4 +1,3 @@
-import { useCallback } from 'react'
 import { 
   Button,
   Box,
@@ -8,26 +7,18 @@ import {
   Tooltip, 
   IconButton,
   Spacer,
-  useDisclosure
+  useDisclosure,
+  LinkBox
 } from "@chakra-ui/react";
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { CgClose } from 'react-icons/cg'
 import { FaHandPeace } from 'react-icons/fa'
-import Link from 'next/link'
+import { Link } from 'react-scroll'
 import routes from '../../routes'
-import { useRouter } from 'next/router'
 
-const routeArray = Object.entries(routes)
 
 export default function Navbar() {
-  const router = useRouter();
   const { isOpen, onOpen, onClose } = useDisclosure()
-
-  const isRoute = useCallback((route) => {
-      return router.route == route;
-    },
-    [router.route],
-  );
 
   return (
     <>
@@ -90,11 +81,15 @@ export default function Navbar() {
         <HStack
           display={['none', 'none', 'flex', 'flex', 'flex']}
         >
-        {routeArray.map(([route, name]) => (
+        {routes.map((route, index) => (
+          <LinkBox>
           <Link 
-            key={name} 
-            href={route}
-            passHref
+            activeClass={'active'}
+            key={index} 
+            to={route.path}
+            offset={-70}
+            duration={300}
+            smooth
           >
             <Button
               as="a"
@@ -102,21 +97,22 @@ export default function Navbar() {
               fontSize='l'
               textColor='gray.300'
               bgColor='black'
-              borderBottom={isRoute(route) ? '2px' : '0px'}
-              borderColor={isRoute(route) ? 'purple' : 'black'}
-              fontWeight={isRoute(route) ? 'bold' : 'semibold'}
+              borderBottom={'0px'}
+              borderColor={'black'}
+              fontWeight={'semibold'}
               _hover={{
                 bgColor: 'purple',
                 textColor: 'black',
-                fontWeight: isRoute(route) ? 'extrabold' : 'bold',
+                fontWeight: 'bold',
                 fontSize: 'xl',
                 transition: 'all 0.1 ease'
               }}
               _focus={{  }}
             >
-              {name}
+              {route.label}
             </Button>
           </Link>
+          </LinkBox>
         ))}
         </HStack>
       </Flex>
@@ -126,33 +122,38 @@ export default function Navbar() {
             <Stack 
               as={'nav'} 
               spacing={4} 
+              align={'center'}
             >
-            {routeArray.map(([route, name]) => (
+            {routes.map((route, index) => (
               <Link 
-                key={name} 
-                href={route}
-                passHref
+                activeClass={'active'}
+                key={index} 
+                to={route.path}
+                offset={-70}
+                duration={300}
+                smooth
               >
                 <Button
-                  as="a"
-                  py='8'
+                  as={'a'}
+                  py={8}
+                  px={20}
                   fontSize='l'
                   textColor='gray.300'
                   bgColor='black'
-                  borderBottom={isRoute(route) ? '2px' : '0px'}
-                  borderColor={isRoute(route) ? 'purple' : 'black'}
-                  fontWeight={isRoute(route) ? 'bold' : 'semibold'}
+                  borderBottom={'0px'}
+                  borderColor={'black'}
+                  fontWeight={'semibold'}
                   onClick={onClose}
                   _hover={{
                     bgColor: 'purple',
                     textColor: 'black',
-                    fontWeight: isRoute(route) ? 'extrabold' : 'bold',
+                    fontWeight: 'bold',
                     fontSize: 'xl',
                     transition: 'all 0.1 ease'
                   }}
                   _focus={{  }}
                 >
-                  {name}
+                  {route.label}
                 </Button>
               </Link>
             ))}

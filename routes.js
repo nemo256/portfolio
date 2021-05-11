@@ -1,8 +1,18 @@
-const routes = {
-  "/": "Home",
-  "/projects": "Projects",
-  "/skills": "Skills",
-  "/about": "About",
-}
-
-export default routes
+export default [
+  {
+    path: 'home',
+    label: 'Home'
+  },
+  {
+    path: 'skills',
+    label: 'Skills'
+  },
+  {
+    path: 'projects',
+    label: 'Projects'
+  },
+  {
+    path: 'about',
+    label: 'About'
+  },
+]
