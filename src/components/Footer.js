@@ -7,10 +7,12 @@ import {
 export default function Footer() {
   return (
     <Container
+      bottom={0}
+      left={0}
       as='footer'
       bg='black'
       align='center'
-      maxW='4xl'
+      maxW='100%'
       py='2'
       px='2'
     >
@@ -30,7 +32,7 @@ export default function Footer() {
         >
           Amine Neggazi
         </Link>
-        Version 1.1
+        Version 1.2
       </Text>
     </Container>
   )

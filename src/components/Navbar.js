@@ -8,12 +8,11 @@ import {
   IconButton,
   Spacer,
   useDisclosure,
-  LinkBox
 } from "@chakra-ui/react";
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { CgClose } from 'react-icons/cg'
 import { FaHandPeace } from 'react-icons/fa'
-import { Link } from 'react-scroll'
+import Link from 'next/link'
 import routes from '../../routes'
 
 
@@ -30,6 +29,7 @@ export default function Navbar() {
       top='0'
       zIndex='10'
       opacity='0.9'
+      display={'flex'}
     >
       <Flex
         w='100%'
@@ -81,22 +81,17 @@ export default function Navbar() {
         <HStack
           display={['none', 'none', 'flex', 'flex', 'flex']}
         >
-        {routes.map((route, index) => (
-          <LinkBox>
+        {routes.map((route) => (
           <Link 
-            activeClass={'active'}
-            key={index} 
-            to={route.path}
-            offset={-70}
-            duration={300}
-            smooth
+            href={route.path}
+            passHref
           >
             <Button
               as="a"
-              mx='1'
+              mx={2}
+              bgColor={'black'}
               fontSize='l'
               textColor='gray.300'
-              bgColor='black'
               borderBottom={'0px'}
               borderColor={'black'}
               fontWeight={'semibold'}
@@ -112,7 +107,6 @@ export default function Navbar() {
               {route.label}
             </Button>
           </Link>
-          </LinkBox>
         ))}
         </HStack>
       </Flex>
@@ -124,14 +118,10 @@ export default function Navbar() {
               spacing={4} 
               align={'center'}
             >
-            {routes.map((route, index) => (
+            {routes.map((route) => (
               <Link 
-                activeClass={'active'}
-                key={index} 
-                to={route.path}
-                offset={-70}
-                duration={300}
-                smooth
+                href={route.path}
+                passHref
               >
                 <Button
                   as={'a'}

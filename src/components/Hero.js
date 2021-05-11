@@ -17,10 +17,7 @@ export default function Hero() {
     <Container
       bgColor='black'
       maxW='4xl'
-      pt={ ['0', '26%', '0', '0', '0'] }
-      pb={ ['5', '26%', '5', '10', '25'] }
-      // pb='10'
-      // pt='auto'
+      pb={5}
     >
       <Stack
         pt='8'
@@ -28,14 +25,13 @@ export default function Hero() {
         align='center'
       >
         <Image
-          boxSize='250px'
+          boxSize='260px'
           rounded='full'
           border='solid'
           border='8px'
           borderColor='purple'
           src='memoji.png'
           fallbackSrc='wave-emoji.png'
-          alt='My profile picture'
           _hover={{
             transform: 'scale(1.07)',
             transition: 'all .3s ease',
@@ -45,7 +41,7 @@ export default function Hero() {
         />
         <Text
           pt='4'
-          fontSize='3xl'
+          fontSize='4xl'
           fontWeight='extrabold'
           color='gray.200'
           align='center'
@@ -53,7 +49,7 @@ export default function Hero() {
           Hi, I'm Amine Neggazi
         </Text>
         <Text
-          fontSize='xl'
+          fontSize='2xl'
           fontWeight='semibold'
           color='gray.400'
           align='center'
@@ -62,7 +58,7 @@ export default function Hero() {
         </Text>
         <Text
           py='2'
-          fontSize='l'
+          fontSize='xl'
           fontWeight='medium'
           color='gray.500'
           align='center'
