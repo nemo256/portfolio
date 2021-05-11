@@ -27,23 +27,22 @@ export default function Hero() {
         spacing='0'
         align='center'
       >
-        <Link href='/about'>
-          <Image
-            boxSize='250px'
-            rounded='full'
-            border='solid'
-            border='8px'
-            borderColor='purple'
-            src='memoji.png'
-            fallbackSrc='wave-emoji.png'
-            alt='My profile picture'
-            _hover={{
-              transform: 'scale(1.07)',
-              transition: 'all .3s ease',
-              bgColor: 'whiteAlpha.200'
-            }}
-          />
-        </Link>
+        <Image
+          boxSize='250px'
+          rounded='full'
+          border='solid'
+          border='8px'
+          borderColor='purple'
+          src='memoji.png'
+          fallbackSrc='wave-emoji.png'
+          alt='My profile picture'
+          _hover={{
+            transform: 'scale(1.07)',
+            transition: 'all .3s ease',
+            bgColor: 'whiteAlpha.200',
+            mb: '4'
+          }}
+        />
         <Text
           pt='4'
           fontSize='3xl'
