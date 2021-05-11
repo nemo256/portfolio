@@ -41,6 +41,7 @@ export default function Hero() {
         />
         <Text
           pt='4'
+          pb='2'
           fontSize='4xl'
           fontWeight='extrabold'
           color='gray.200'
