@@ -138,7 +138,6 @@ export default function BackEnd(){
             variant={'ghost'}
             bgColor={framework.color}
             px={8}
-            py={2}
             _hover={{
               transition: 'all .2s ease',
               transform: 'scale(1.23)'
@@ -189,7 +188,6 @@ export default function BackEnd(){
             variant={'ghost'}
             bgColor={language.color}
             px={8}
-            py={2}
             _hover={{
               transition: 'all .2s ease',
               transform: 'scale(1.23)'
