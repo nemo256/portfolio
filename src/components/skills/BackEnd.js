@@ -76,8 +76,8 @@ export default function BackEnd(){
       px={4}
       rounded={'2xl'}
       border={'8px'}
-      minW={['82%', '37%']}
-      maxW={['83%', '38%']}
+      minW={['87%', '37%']}
+      maxW={['88%', '38%']}
       _hover={{
         transition: 'all .3s ease',
         transform: 'scale(1.016)',

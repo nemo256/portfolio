@@ -52,8 +52,8 @@ export default function CLI_apps(){
       px={4}
       rounded={'2xl'}
       border={'8px'}
-      minW={'81%'}
-      maxW={'82%'}
+      minW={['87%', '81%']}
+      maxW={['88%', '82%']}
       _hover={{
         transition: 'all .3s ease',
         transform: 'scale(1.016)',
