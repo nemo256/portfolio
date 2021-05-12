@@ -8,7 +8,8 @@ const theme = extendTheme({
   styles: {
     global: {
       body: {
-        bg: "black",
+        bg: 'black',
+        color: 'gray.800'
       },
     },
   },
