@@ -728,20 +728,10 @@
   resolved "https://registry.yarnpkg.com/@emotion/weak-memoize/-/weak-memoize-0.2.5.tgz#8eed982e2ee6f7f4e44c253e12962980791efd46"
   integrity sha512-6U71C2Wp7r5XtFtQzYrW5iKFT67OixrSxjI4MptCHzdSVlgabczzqLe0ZSgnub/5Kp4hSbpDB1tMytZY9pwxxA==
 
-"@fontsource/fresca@^4.2.3":
-  version "4.2.3"
-  resolved "https://registry.yarnpkg.com/@fontsource/fresca/-/fresca-4.2.3.tgz#2e0e200162452916647bcd7ac8aeba74c55b724d"
-  integrity sha512-MkE9YWLTlhtjSnvVmDWHssuCe32EF53P27rSzIL7DqcZHVwxfz33b+E5U/OO547pJjTZdx/AcPulkHNrHDJNsw==
-
-"@fontsource/girassol@^4.2.3":
-  version "4.2.3"
-  resolved "https://registry.yarnpkg.com/@fontsource/girassol/-/girassol-4.2.3.tgz#a3eb2e766b50c19f60ae843a811f8f60becc58d9"
-  integrity sha512-D42cG+2AbagAmxJKLNdmA2JYonHdwiJ+gn/xQCO3aVtVECIor2pKZHeamBVehyMbVxyFqMIsWgDWSdwn3sFOLQ==
-
-"@fontsource/open-sans@^4.2.2":
-  version "4.2.2"
-  resolved "https://registry.yarnpkg.com/@fontsource/open-sans/-/open-sans-4.2.2.tgz#59046f772136a44c5999e0189d33c6a26676630c"
-  integrity sha512-NbsL1a9asJO6N/5kRxYPCy0kNhKMi9T75kl4QfIGtmpd/5IfB+UIAUxd9AICmCLaH4Osc2TImeTJj94xc9MNKg==
+"@fontsource/roboto-mono@^4.3.0":
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/@fontsource/roboto-mono/-/roboto-mono-4.3.0.tgz#b443c6cd8b44a37ad4582279771f70e4042d8438"
+  integrity sha512-Driw0cYOvwUONOaWV6PxgUrqjcfsAvp2HxV94wmBZQAYhVQEPRBGbOa01fGX/ZjOsLok4xx94C/dH2pYh933YQ==
 
 "@hapi/accept@5.0.1":
   version "5.0.1"

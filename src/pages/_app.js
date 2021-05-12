@@ -1,14 +1,16 @@
-import { ChakraProvider, ColorModeProvider } from '@chakra-ui/react'
-import { extendTheme as theme } from '../theme'
-import Layout from '../components/layouts/Layout'
-
 // Fonts
-import '@fontsource/open-sans/700.css'
-import '@fontsource/fresca/400.css'
+import '@fontsource/roboto-mono/700.css'
 
-export default function MyApp({ Component, pageProps }) {
+import { ChakraProvider, ColorModeProvider, CSSReset } from '@chakra-ui/react'
+import Layout from '../components/layouts/Layout'
+import theme from '../theme'
+
+
+
+export default function App({ Component, pageProps }) {
   return (
-    <ChakraProvider theme={ theme } resetCSS>
+    <ChakraProvider theme={theme}>
+      <CSSReset />
       <ColorModeProvider
         options={{
           useSystemColorMode: true,
