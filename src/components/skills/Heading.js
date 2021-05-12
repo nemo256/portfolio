@@ -14,12 +14,12 @@ export default function Heading() {
         justify={'center'}
         align={'center'}
         maxW={['100%', '67%']}
-        pt={2}
+        pt={8}
       >
         <Text
           fontSize={'2xl'}
           fontWeight={'bold'}
-          bgGradient={'linear( 113.3deg,  rgba(217,9,27,1) 6.9%, rgba(22,68,150,1) 75% )'}
+          bgGradient={'linear( 113.3deg, rgba(217,9,27,1) 6.9%, rgba(22,68,150,1) 75% )'}
           bgClip={'text'}
           align={'center'}
           justify={'center'}

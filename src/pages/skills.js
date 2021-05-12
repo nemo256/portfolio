@@ -1,20 +1,35 @@
 import Heading from '../components/skills/Heading'
 import FrontEnd from '../components/skills/FrontEnd'
 import BackEnd from '../components/skills/BackEnd'
-import {
-  Flex,
-  Stack
-} from '@chakra-ui/react'
+import CLI_apps from '../components/skills/CLI_apps'
+import { Stack } from '@chakra-ui/react'
 
 
 export default function Skills() {
   return (
     <>
-      <Stack direction={'column'} spacing={8}>
+      <Stack 
+        direction={'column'} 
+        spacing={8}
+        pb={20}
+      >
         <Heading />
-        <Stack py={4} justify={'center'} direction={['column', 'row']} spacing={16}>
+        <Stack 
+          pt={4}
+          pb={[0, 4]}
+          align={['center', 'normal']}
+          justify={'center'}
+          direction={['column', 'row']} 
+          spacing={[8, 16]}
+        >
           <FrontEnd />
           <BackEnd />
+        </Stack>
+        <Stack
+          align={'center'}
+          justify={'center'}
+        >
+          <CLI_apps />
         </Stack>
       </Stack>
     </>

@@ -78,10 +78,13 @@ export default function FrontEnd(){
   return (
     <Box
       bg={'black'}
-      p={4}
+      pt={4}
+      pb={6}
+      px={4}
       rounded={'2xl'}
       border={'8px'}
-      minW={'37%'}
+      minW={['82%', '37%']}
+      maxW={['83%', '38%']}
       _hover={{
         transition: 'all .3s ease',
         transform: 'scale(1.016)',
