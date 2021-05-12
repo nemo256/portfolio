@@ -13,7 +13,7 @@ import { GiHamburgerMenu } from 'react-icons/gi'
 import { CgClose } from 'react-icons/cg'
 import { FaHandPeace } from 'react-icons/fa'
 import Link from 'next/link'
-import routes from '../../routes'
+import routes from '../../../routes'
 
 
 export default function Navbar() {
@@ -81,8 +81,9 @@ export default function Navbar() {
         <HStack
           display={['none', 'none', 'flex', 'flex', 'flex']}
         >
-        {routes.map((route) => (
+        {routes.map((route, index) => (
           <Link 
+            key={index}
             href={route.path}
             passHref
           >
@@ -118,8 +119,9 @@ export default function Navbar() {
               spacing={4} 
               align={'center'}
             >
-            {routes.map((route) => (
+            {routes.map((route, index) => (
               <Link 
+                key={index}
                 href={route.path}
                 passHref
               >

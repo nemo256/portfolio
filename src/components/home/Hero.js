@@ -67,7 +67,7 @@ export default function Hero() {
           I design and code Web, Mobile & CLI apps.
         </Text>
         <Flex pt={ ['8', '4'] }>
-          <Link href='https://twitter.com/amine_neggazi' passHref>
+          <Link key={1} href='https://twitter.com/amine_neggazi' passHref>
             <IconButton
               aria-label='Twitter Icon'
               variant='icon'
@@ -82,7 +82,7 @@ export default function Hero() {
               _focus={{  }}
             />
           </Link>
-          <Link href='https://www.github.com/nemo256' passHref>
+          <Link key={2} href='https://www.github.com/nemo256' passHref>
             <IconButton
               aria-label='Github Icon'
               variant='icon'
@@ -97,7 +97,7 @@ export default function Hero() {
               _focus={{  }}
             />
           </Link>
-          <Link href='https://www.reddit.com/user/nemo256' passHref>
+          <Link key={3} href='https://www.reddit.com/user/nemo256' passHref>
             <IconButton
               aria-label='Reddit Icon'
               variant='icon'

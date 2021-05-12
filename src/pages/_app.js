@@ -1,6 +1,6 @@
 import { ChakraProvider, ColorModeProvider } from '@chakra-ui/react'
 import { extendTheme as theme } from '../theme'
-import Layout from '../components/Layout'
+import Layout from '../components/layouts/Layout'
 
 // Fonts
 import '@fontsource/open-sans/700.css'

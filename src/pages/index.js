@@ -1,8 +1,4 @@
-import Hero from '../components/Hero'
-import Skills from '../components/Skills'
-import {
-  Flex
-} from '@chakra-ui/react'
+import Hero from '../components/home/Hero'
 
 
 export default function Index() {
