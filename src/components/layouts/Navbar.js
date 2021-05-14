@@ -91,16 +91,16 @@ export default function Navbar() {
               as="a"
               mx={2}
               bgColor={'black'}
-              fontSize='l'
+              fontSize='xl'
               textColor='gray.300'
-              borderBottom={'0px'}
+              borderBottom={0}
               borderColor={'black'}
-              fontWeight={'semibold'}
+              fontWeight={'bold'}
               _hover={{
                 bgColor: 'purple',
                 textColor: 'black',
-                fontWeight: 'bold',
-                fontSize: 'xl',
+                fontWeight: 'extrabold',
+                fontSize: '2xl',
                 transition: 'all 0.1 ease'
               }}
               _focus={{  }}
@@ -128,18 +128,18 @@ export default function Navbar() {
                 <Button
                   as={'a'}
                   py={8}
-                  px={20}
-                  fontSize='l'
+                  w={'100%'}
+                  fontSize='xl'
                   textColor='gray.300'
                   bgColor='black'
                   borderBottom={'0px'}
                   borderColor={'black'}
-                  fontWeight={'semibold'}
+                  fontWeight={'bold'}
                   onClick={onClose}
                   _hover={{
                     bgColor: 'purple',
                     textColor: 'black',
-                    fontWeight: 'bold',
+                    fontWeight: 'extrabold',
                     fontSize: 'xl',
                     transition: 'all 0.1 ease'
                   }}
