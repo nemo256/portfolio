@@ -1,7 +1,6 @@
 import {
   Box,
   Stack,
-  Spacer,
   Text,
   Divider,
   Tag,
@@ -52,8 +51,8 @@ export default function CLI_apps(){
       px={4}
       rounded={'2xl'}
       border={'8px'}
-      minW={['87%', '81%']}
-      maxW={['88%', '82%']}
+      minW={['87%', '87%', '81%', '81%', '81%', '81%']}
+      maxW={['88%', '88%', '82%', '82%', '82%', '82%']}
       _hover={{
         transition: 'all .3s ease',
         transform: 'scale(1.016)',
