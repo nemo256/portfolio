@@ -69,7 +69,7 @@ export default function Navbar() {
           }
           onClick={isOpen ? onClose : onOpen}
           display={{ 
-            sm: !isOpen ? 'inherit' : 'none',
+            sm: !isOpen ? 'inherit' : 'inherit',
             md: !isOpen ? 'none' : 'inherit',
             lg: !isOpen ? 'none' : 'inherit',
             xl: !isOpen ? 'none' : 'inherit',
