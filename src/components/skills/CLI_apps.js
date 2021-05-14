@@ -1,6 +1,7 @@
 import {
   Box,
   Stack,
+  Spacer,
   Text,
   Divider,
   Tag,
@@ -11,7 +12,6 @@ import { AiFillTool } from 'react-icons/ai'
 import { BiCodeCurly } from 'react-icons/bi'
 import { IoLogoNodejs } from 'react-icons/io'
 import { 
-  RiWindowLine,
   RiTerminalBoxFill 
 } from 'react-icons/ri'
 import { SiC } from 'react-icons/si'
@@ -82,11 +82,14 @@ export default function CLI_apps(){
       <Divider />
       <Stack 
         direction={['column', 'row']} 
-        spacing={[0, 40]}
         align={['normal', 'center']}
         justify={'center'}
       >
-        <Stack direction={'column'}>
+        <Stack 
+          direction={'column'}
+          align={'center'}
+          w={'100%'}
+        >
           <Stack 
             align={'center'} 
             direction={'row'} 
@@ -138,7 +141,11 @@ export default function CLI_apps(){
           ))}
           </Stack>
         </Stack>
-        <Stack direction={'column'}>
+        <Stack 
+          direction={'column'}
+          align={'center'}
+          w={'100%'}
+        >
           <Stack 
             align={'center'} 
             direction={'row'} 
