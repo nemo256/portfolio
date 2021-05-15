@@ -1,7 +1,8 @@
 import { 
   Stack,
-  Image
+  Image,
 } from '@chakra-ui/react'
+import Tilt from 'react-tilt'
 
 
 export default function Photo() {
@@ -10,12 +11,15 @@ export default function Photo() {
       w={'100%'}
       align={'center'}
     >
-      <Image
-        w={'300px'}
-        h={'400px'}
-        rounded={'lg'}
-        src={'me.jpg'}
-      />
+      <Tilt>
+        <Image
+          w={'220px'}
+          h={'300px'}
+          rounded={'lg'}
+          src={'me.jpg'}
+          boxShadow={'dark-lg'}
+        />
+      </Tilt>
     </Stack>
   )
 }
