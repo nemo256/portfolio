@@ -7,31 +7,29 @@ import { Stack } from '@chakra-ui/react'
 
 export default function Skills() {
   return (
-    <>
+    <Stack 
+      direction={'column'} 
+      spacing={8}
+      pb={20}
+    >
+      <Heading />
       <Stack 
-        direction={'column'} 
-        spacing={8}
-        pb={20}
+        pt={4}
+        pb={[0, 4]}
+        align={['center', 'normal']}
+        justify={'center'}
+        direction={['column', 'row']} 
+        spacing={[8, 16]}
       >
-        <Heading />
-        <Stack 
-          pt={4}
-          pb={[0, 4]}
-          align={['center', 'normal']}
-          justify={'center'}
-          direction={['column', 'row']} 
-          spacing={[8, 16]}
-        >
-          <FrontEnd />
-          <BackEnd />
-        </Stack>
-        <Stack
-          align={'center'}
-          justify={'center'}
-        >
-          <CLI_apps />
-        </Stack>
+        <FrontEnd />
+        <BackEnd />
       </Stack>
-    </>
+      <Stack
+        align={'center'}
+        justify={'center'}
+      >
+        <CLI_apps />
+      </Stack>
+    </Stack>
   )
 }
