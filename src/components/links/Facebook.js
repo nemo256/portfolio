@@ -1,17 +1,17 @@
-import { FaGithub } from 'react-icons/fa'
+import { FaFacebook } from 'react-icons/fa'
 import { IconButton } from '@chakra-ui/react'
 import Link from 'next/link'
 
 
-export default function Github() {
+export default function Facebook() {
   return (
-    <Link href='https://www.github.com/nemo256' passHref>
+    <Link href='https://facebook.com/nemo256' passHref>
       <IconButton
-        aria-label='Github Icon'
+        aria-label='Facebook Icon'
         variant='icon'
-        color='#E0E0E0'
+        color='#3C5B9B'
         isRound
-        icon={ <FaGithub size='50' p='8'/> }
+        icon={ <FaFacebook size='50' p='8'/> }
         _hover={{
           transform: 'scale(1.27)',
           transition: 'all .3s ease'

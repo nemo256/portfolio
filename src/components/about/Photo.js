@@ -8,9 +8,9 @@ import Tilt from 'react-tilt'
 export default function Photo() {
   return (
     <Stack 
-      p={'2'}
+      py={'2'}
       pt={'8'}
-      w={'70%'}
+      w={['100%', '70%']}
       align={'center'}
       justify={'center'}
     >

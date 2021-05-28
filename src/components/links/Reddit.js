@@ -11,7 +11,6 @@ export default function Reddit() {
         variant='icon'
         color='#FF5700'
         isRound
-        mx='3'
         icon={ <FaReddit size='50' p='8'/> }
         _hover={{
           transform: 'scale(1.27)',
