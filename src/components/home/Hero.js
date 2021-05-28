@@ -1,15 +1,17 @@
 import {
   Container,
   Text,
-  Image,
   Stack,
   Flex,
-  IconButton,
 } from '@chakra-ui/react'
-import Link from 'next/link'
 
-// Icons
-import { FaTwitter, FaReddit, FaGithub } from 'react-icons/fa'
+// Memoji
+import Memoji from '../home/Memoji'
+
+// Links
+import Twitter from '../links/Twitter'
+import Github from '../links/Github'
+import Reddit from '../links/Reddit'
 
 
 export default function Hero() {
@@ -24,21 +26,7 @@ export default function Hero() {
         spacing='0'
         align='center'
       >
-        <Image
-          boxSize='260px'
-          rounded='full'
-          border='solid'
-          border='8px'
-          borderColor='purple'
-          src='memoji.png'
-          fallbackSrc='wave-emoji.png'
-          _hover={{
-            transform: 'scale(1.07)',
-            transition: 'all .3s ease',
-            bgColor: 'whiteAlpha.200',
-            mb: '4'
-          }}
-        />
+        <Memoji />
         <Text
           pt='4'
           pb='2'
@@ -67,51 +55,9 @@ export default function Hero() {
           I design and code Web, Mobile & CLI apps.
         </Text>
         <Flex pt={ ['8', '4'] }>
-          <Link key={1} href='https://twitter.com/amine_neggazi' passHref>
-            <IconButton
-              aria-label='Twitter Icon'
-              variant='icon'
-              color='#1DA1F2'
-              isRound
-              mx='3'
-              icon={ <FaTwitter size='50' p='8'/> }
-              _hover={{
-                transform: 'scale(1.27)',
-                transition: 'all .3s ease'
-              }}
-              _focus={{  }}
-            />
-          </Link>
-          <Link key={2} href='https://www.github.com/nemo256' passHref>
-            <IconButton
-              aria-label='Github Icon'
-              variant='icon'
-              color='#E0E0E0'
-              isRound
-              mx='3'
-              icon={ <FaGithub size='50' p='8'/> }
-              _hover={{
-                transform: 'scale(1.27)',
-                transition: 'all .3s ease'
-              }}
-              _focus={{  }}
-            />
-          </Link>
-          <Link key={3} href='https://www.reddit.com/user/nemo256' passHref>
-            <IconButton
-              aria-label='Reddit Icon'
-              variant='icon'
-              color='#FF5700'
-              isRound
-              mx='3'
-              icon={ <FaReddit size='50' p='8'/> }
-              _hover={{
-                transform: 'scale(1.27)',
-                transition: 'all .3s ease'
-              }}
-              _focus={{  }}
-            />
-          </Link>
+          <Twitter />
+          <Github />
+          <Reddit />
         </Flex>
       </Stack>
     </Container>
