@@ -8,13 +8,16 @@ import Tilt from 'react-tilt'
 export default function Photo() {
   return (
     <Stack 
-      w={'100%'}
+      p={'2'}
+      pt={'8'}
+      w={'70%'}
       align={'center'}
+      justify={'center'}
     >
-      <Tilt>
+      <Tilt options={{ max: 18 }}>
         <Image
-          w={'220px'}
-          h={'300px'}
+          w={'240px'}
+          h={'330px'}
           rounded={'lg'}
           src={'me.jpg'}
           boxShadow={'dark-lg'}
