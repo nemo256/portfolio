@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 export default function Instagram() {
   return (
-    <Link href='https://twitter.com/amine_neggazi' passHref>
+    <Link href='https://www.instagram.com/amine_neggazi0/' passHref>
       <IconButton
         aria-label='Twitter Icon'
         variant='icon'

@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 export default function Facebook() {
   return (
-    <Link href='https://facebook.com/nemo256' passHref>
+    <Link href='https://facebook.com/nemo256/' passHref>
       <IconButton
         aria-label='Facebook Icon'
         variant='icon'
