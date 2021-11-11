@@ -41,7 +41,7 @@ export default function Navbar() {
         <Tooltip
           hasArrow 
           label='Me Myself and I'
-          bg='purple.600'
+          bg='#4b0088'
           placement='auto'
         >
           <IconButton
@@ -97,7 +97,7 @@ export default function Navbar() {
               borderColor={'black'}
               fontWeight={'bold'}
               _hover={{
-                bgColor: 'purple',
+                bgColor: '#4b0088',
                 textColor: 'black',
                 fontWeight: 'extrabold',
                 fontSize: '2xl',
@@ -137,7 +137,7 @@ export default function Navbar() {
                   fontWeight={'bold'}
                   onClick={onClose}
                   _hover={{
-                    bgColor: 'purple',
+                    bgColor: '#4b0088',
                     textColor: 'black',
                     fontWeight: 'extrabold',
                     fontSize: 'xl',

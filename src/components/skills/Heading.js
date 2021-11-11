@@ -19,7 +19,7 @@ export default function Heading() {
         <Text
           fontSize={'2xl'}
           fontWeight={'extrabold'}
-          bgGradient={'linear(109.6deg, rgba(116,18,203,1) 11.2%, rgba(230,46,131,1) 91.2%)'}
+          bgGradient={'linear(109.6deg, #1b0081 11.2%, #4b00af 91.2%)'}
           bgClip={'text'}
           align={'center'}
           justify={'center'}

@@ -88,7 +88,7 @@ export default function FrontEnd(){
       _hover={{
         transition: 'all .3s ease',
         transform: 'scale(1.016)',
-        borderColor: 'indigo'
+        borderColor: '#4b0088'
       }}
     >
       <Stack 
@@ -100,7 +100,7 @@ export default function FrontEnd(){
       >
         <RiWindowLine 
           size={92} 
-          color={'blue'}
+          color={'#4b0088'}
         />
         <Text
           color={'gray.300'}

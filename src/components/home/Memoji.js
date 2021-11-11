@@ -8,7 +8,7 @@ export default function Memoji() {
       rounded='full'
       border='solid'
       border='8px'
-      borderColor='purple'
+      borderColor='#4b0088'
       src='memoji.png'
       fallbackSrc='wave-emoji.png'
       _hover={{

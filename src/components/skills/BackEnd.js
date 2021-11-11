@@ -81,7 +81,7 @@ export default function BackEnd(){
       _hover={{
         transition: 'all .3s ease',
         transform: 'scale(1.016)',
-        borderColor: 'coral',
+        borderColor: '#0000af',
       }}
     >
       <Stack 
@@ -93,7 +93,7 @@ export default function BackEnd(){
       >
         <HiCode 
           size={92} 
-          color={'#be0000'}
+          color={'#0000af'}
         />
         <Text
           color={'gray.300'}

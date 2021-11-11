@@ -56,7 +56,7 @@ export default function CLI_apps(){
       _hover={{
         transition: 'all .3s ease',
         transform: 'scale(1.016)',
-        borderColor: '#8db600'
+        borderColor: '#808080'
       }}
     >
       <Stack 
@@ -68,7 +68,7 @@ export default function CLI_apps(){
       >
         <RiTerminalBoxFill 
           size={92} 
-          color={'#33FF33'}
+          color={'#808080'}
         />
         <Text
           color={'gray.300'}
