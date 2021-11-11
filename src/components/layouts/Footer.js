@@ -26,13 +26,13 @@ export default function Footer() {
           as='a'
           href='/'
           outline='none'
-          color='purple.600'
+          color='#4b0088'
           fontWeight='semibold'
           px='2'
         >
           Amine Neggazi
         </Link>
-        Version 1.2
+        Version 1.2.1
       </Text>
     </Container>
   )

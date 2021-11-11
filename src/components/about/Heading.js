@@ -16,7 +16,7 @@ export default function Heading() {
         fontSize={'3xl'}
         align={['center', 'left']}
       >
-        About Amine Neggazi
+        About Me
       </Text>
       <Text
         color={'gray.400'}

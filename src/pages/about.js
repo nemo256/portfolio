@@ -44,9 +44,9 @@ export default function About() {
           color={'gray.200'}
           fontSize={'xl'}
           align={'center'}
-          bgGradient={"linear-gradient(111.2deg, rgba(232,5,5,1) 1.7%, rgba(245,49,191,1) 98.7%)"}
+          bgGradient={'linear(109.6deg, #1b0081 11.2%, #4b00af 91.2%)'}
           bgClip={'text'}
-          noOfLines={[2, 1]}
+          noOfLines={[2, 2, 1]}
         >
           neggazimedlamine@gmail.com
         </Text>

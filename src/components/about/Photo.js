@@ -16,10 +16,10 @@ export default function Photo() {
     >
       <Tilt options={{ max: 18 }}>
         <Image
-          w={'240px'}
-          h={'330px'}
+          w={'250px'}
+          h={'420px'}
           rounded={'lg'}
-          src={'me.jpg'}
+          src={'me2.jpeg'}
           boxShadow={'dark-lg'}
         />
       </Tilt>
