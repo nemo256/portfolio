@@ -26,8 +26,8 @@ export default function Footer() {
           as='a'
           href='/'
           outline='none'
-          color='#4b0088'
-          fontWeight='semibold'
+          color='#4b00af'
+          fontWeight='bold'
           px='2'
         >
           Amine Neggazi
