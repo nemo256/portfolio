@@ -1,0 +1,3 @@
+- Add a projects page
+- Reorganize into a landing page
+- Add credit links to: motherfuckingwebsite, sadgrl...
