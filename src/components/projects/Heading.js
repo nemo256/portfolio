@@ -2,7 +2,8 @@ import {
   Text,
   Box,
   Flex,
-  Spacer
+  Spacer,
+  Link
 } from '@chakra-ui/react'
 
 
@@ -26,7 +27,21 @@ export default function Heading() {
           pb={4}
           px={4}
         >
-          Tools and languages I used throughout the years to build beautiful Websites and Apps in general:
+          Here is the link to all my projects:
+        </Text>
+        <Text
+          fontSize={'2xl'}
+          fontWeight={'extrabold'}
+          color={'#4b00af'}
+          align={'center'}
+          justify={'center'}
+          pt={8}
+          pb={4}
+          px={4}
+        >
+          <Link href="https://github.com/nemo256?tab=repositories" isExternal>
+            https://github.com/nemo256?tab=repositories
+          </Link>
         </Text>
       </Box>
       <Spacer />
