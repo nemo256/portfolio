@@ -1,29 +1,48 @@
-# Example app with [chakra-ui](https://github.com/chakra-ui/chakra-ui)
+# Portfolio
+A custom (personal) portfolio.
 
-This example features how to use [chakra-ui](https://github.com/chakra-ui/chakra-ui) as the component library within a Next.js app.
+![Demo](demo.gif)
 
-We are connecting the Next.js `_app.js` with `chakra-ui`'s Theme and ColorMode containers so the pages can have app-wide dark/light mode. We are also creating some components which shows the usage of `chakra-ui`'s style props.
+<!-- TABLE OF CONTENTS -->
+## Table of Contents
 
-## Deploy your own
+* [Setup](#setup)
+* [License](#license)
+* [Credits](#credits)
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
+## Setup
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-chakra-ui&project-name=with-chakra-ui&repository-name=with-chakra-ui)
-
-## How to use
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
-
-```bash
-npx create-next-app --example with-chakra-ui with-chakra-ui-app
-# or
-yarn create next-app --example with-chakra-ui with-chakra-ui-app
+### Download the project:
+```
+$ git clone https://github.com/nemo256/portfolio
+$ cd portfolio
 ```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+### Install the required dependencies:
+```
+$ yarn install
+```
+or
+```
+$ npm install
+```
 
-## Notes
+### Launch a development server:
+```
+$ yarn dev
+```
+or
+```
+$ npm run dev
+```
 
-Chakra has supported Gradients and RTL in `v1.1`. To utilize RTL, [add RTL direction and swap](https://chakra-ui.com/docs/features/rtl-support).
+### Check localhost port 3000:
+```
+$ firefox localhost:3000
+```
 
-If you don't have multi-direction app, you should make `<Html lang="ar" dir="rtl">` inside `_document.js`.
+## License
+- Please read portfolio/LICENSE.
+
+## Credits
+- Credits go to the developers of [NextJS](https://nextjs.org/).
