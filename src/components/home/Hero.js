@@ -43,7 +43,7 @@ export default function Hero() {
           color={'gray.400'}
           align={'center'}
         >
-          Full-Stack Web Developer & Open Sourcerer
+          Developer & Open Sourcerer
         </Text>
         <Text
           py={2}
