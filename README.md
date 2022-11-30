@@ -1,7 +1,7 @@
 # Portfolio
 A custom (personal) portfolio.
 
-![Demo](demo.gif)
+![Demo](demo.png)
 
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
