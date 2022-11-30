@@ -26,7 +26,7 @@ export default function Heading() {
           pb={4}
           px={4}
         >
-          Tools and languages I used throughout the years to build beautiful Websites and Apps in general:
+          Tools and languages I used throughout the years to build Websites and Apps in general:
         </Text>
       </Box>
       <Spacer />
