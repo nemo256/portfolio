@@ -12,7 +12,7 @@
 ![License](https://shields.io/github/license/nemo256/portfolio?style=for-the-badge)
 
 <!-- Demo image -->
-![Demo](demo.gif)
+![Demo](demo.png)
 
 </div>
 
@@ -56,7 +56,6 @@ npm run dev
 ```shell
 firefox localhost:3000
 ```
-
 
 ## Credits 🤝
 - Credits go to the developers of [NextJS](https://nextjs.org/).
