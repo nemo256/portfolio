@@ -16,9 +16,6 @@
 
 </div>
 
-# Portfolio
-A custom (personal) portfolio.
-
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
 
